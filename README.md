@@ -1,3 +1,22 @@
+# 🎲 Jeu de Dé 3D - Projet TP React & Three.js
+
+Ce projet est une application web interactive en 3D développée avec **React** et **Three.js**. Elle permet de lancer un dé réaliste avec une animation fluide et de conserver un historique des lancers.
+
+---
+
+## 📝 Contexte & Fonctionnalités
+
+Dans le cadre de ce TP, plusieurs fonctionnalités clés ont été implémentées :
+
+* **Rendu 3D temps réel :** Modélisation d'un dé cubique en 3D avec éclairage dynamique (`ambientLight`, `pointLight`).
+* **Textures personnalisées :** Application précise de textures d'images (`dice1.png` à `dice6.png`) sur chaque face du cube en respectant l'indexation de Three.js.
+* **Animation fluide en 3/4 :** Animation de rotation progressive (calculée à chaque frame) pour afficher la face gagnante, le tout sous une perspective fixe en vue de 3/4 pour un rendu plus immersif.
+* **Gestion de l'historique :** Un tableau stocke la liste des lancers précédents.
+* **Persistance des données :** Utilisation combinée de `useEffect` et du `localStorage` pour sauvegarder l'historique et le restaurer automatiquement au rechargement de la page.
+* **Interface utilisateur dynamique :** Un panneau superposé permet de voir l'historique s'étendre verticalement (avec défilement automatique) et d'effacer les données d'un clic via un bouton dédié.
+
+---
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
